@@ -1,0 +1,11 @@
+#!/bin/bash
+rm -rvf /Applications/Veteris.app
+cp -rav /var/mobile/Applications/*/Veteris.app /Applications/
+rm -rvf /var/mobile/Applications/*/Veteris.app
+mv -v /Applications/Veteris.app/Veteris /Applications/Veteris.app/Veteris_
+mv -v /tmp/Veteris /Applications/Veteris.app/Veteris
+chown root:wheel /Applications/Veteris.app/Veteris
+chmod 755 /Applications/Veteris.app/Veteris
+chmod 6755 /Applications/Veteris.app/Veteris_
+chown root:wheel /Applications/Veteris.app/Veteris_
+ldid -S/tmp/ent.xml /Applications/Veteris.app/Veteris_
