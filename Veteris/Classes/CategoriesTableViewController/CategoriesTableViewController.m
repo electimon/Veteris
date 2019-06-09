@@ -8,6 +8,8 @@
 
 #import "CategoriesTableViewController.h"
 #import "CategoriesTableViewCell.h"
+#import "../FeaturedTableViewController/FeaturedTableViewCell.h"
+#import "../CategorySelectedViewController/CategorySelectedViewController.h"
 #import "VAPIHelper.h"
 
 @interface CategoriesTableViewController ()
@@ -66,4 +68,19 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqual:@"CategorySelectedPush"]) {
+        
+        NSLog(@"Veteris: Pushing CategorySelectedView");
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        FeaturedTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        
+        CategorySelectedViewController *categorySelected = segue.destinationViewController;
+        
+        categorySelected.categoryID = [[NSString alloc] initWithString:[[[apiResponse objectForKey:@"categories"] objectAtIndex:indexPath.row] valueForKey:@"id"]];
+        
+    }
+}
 @end

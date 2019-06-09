@@ -39,6 +39,7 @@
 		2BC46C4D22ACBBEA00B8873F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C4B22ACBBEA00B8873F /* SVProgressHUD.m */; };
 		2BC46C4F22ACBF6D00B8873F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC46C4E22ACBF6D00B8873F /* QuartzCore.framework */; };
 		2BC46C5222ACCD5200B8873F /* CategoriesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C5122ACCD5200B8873F /* CategoriesTableViewCell.m */; };
+		2BC46C5622ACD08D00B8873F /* CategorySelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C5522ACD08D00B8873F /* CategorySelectedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,8 @@
 		2BC46C4E22ACBF6D00B8873F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		2BC46C5022ACCD5200B8873F /* CategoriesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesTableViewCell.h; sourceTree = "<group>"; };
 		2BC46C5122ACCD5200B8873F /* CategoriesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesTableViewCell.m; sourceTree = "<group>"; };
+		2BC46C5422ACD08D00B8873F /* CategorySelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategorySelectedViewController.h; sourceTree = "<group>"; };
+		2BC46C5522ACD08D00B8873F /* CategorySelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategorySelectedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,7 @@
 		2BC46BFD22AB19D000B8873F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2BC46C5322ACD07600B8873F /* CategorySelectedViewController */,
 				2BC46C0222AB1A2A00B8873F /* FeaturedTableViewController */,
 				2BC46C2422AB255700B8873F /* CategoriesTableViewController */,
 				2BC46C2722AB255700B8873F /* SearchTableViewController */,
@@ -241,6 +245,15 @@
 			);
 			name = SVProgressHUD;
 			path = Veteris/SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		2BC46C5322ACD07600B8873F /* CategorySelectedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2BC46C5422ACD08D00B8873F /* CategorySelectedViewController.h */,
+				2BC46C5522ACD08D00B8873F /* CategorySelectedViewController.m */,
+			);
+			path = CategorySelectedViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +357,7 @@
 				2BC46C2322AB252900B8873F /* FeaturedTableViewCell.m in Sources */,
 				2BC46C5222ACCD5200B8873F /* CategoriesTableViewCell.m in Sources */,
 				2BC46C3F22AB286300B8873F /* VAPIHelper.m in Sources */,
+				2BC46C5622ACD08D00B8873F /* CategorySelectedViewController.m in Sources */,
 				2B1EC2E822AB178400738022 /* main.m in Sources */,
 				2BC46C4D22ACBBEA00B8873F /* SVProgressHUD.m in Sources */,
 				2BC46C2B22AB255700B8873F /* SearchTableViewController.m in Sources */,
