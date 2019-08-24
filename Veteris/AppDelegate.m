@@ -11,14 +11,13 @@
 
 @implementation AppDelegate
 @synthesize VAPIDeviceString;
+@synthesize installingBool;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    
     self.VAPIDeviceString = [VAPIHelper setVAPIDeviceString];
     
-    NSLog(@"==== %@", self.VAPIDeviceString);
+    installingBool = false;
     
     return YES;
 }

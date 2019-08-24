@@ -1,0 +1,10 @@
+Package: tk.1pwn.veteris
+Name: Veteris
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: A client for Veteris. Veteris is a App Store replacement backend.
+Homepage: https://1pwn.tk
+Maintainer: Electimon <electimon@gmail.com>
+Author: Jhon Diaz (electimon) <electimon@gmail.com>
+Section: Utilities
+Icon: file:///Applications/Veteris.app/Icon@2x.png

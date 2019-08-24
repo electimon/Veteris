@@ -40,8 +40,6 @@
     
     AppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
     
-    NSLog(@"VAPIstring = %@", appdelegate.VAPIDeviceString);
-    
     apiResponse = [VAPIHelper apiGet:@"listing/recommended"];
     
     apiResponseArray = [apiResponse objectForKey:@"applications"];
@@ -104,7 +102,6 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqual:@"FeaturedAppInfoPush"]) {
-        NSLog(@"Veteris: Pushing AppInfo");
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
@@ -114,7 +111,8 @@
         
         appinfo.appName = [[apiResponseArray objectAtIndex:indexPath.row] valueForKey:@"name"];
         appinfo.appDeveloperName = [[apiResponseArray objectAtIndex:indexPath.row] valueForKey:@"developer"];
-        appinfo.appBundleID = [[apiResponseArray objectAtIndex:indexPath.row] valueForKey:@"bundleid"];        
+        appinfo.appBundleID = [[apiResponseArray objectAtIndex:indexPath.row] valueForKey:@"bundleid"];
+        
         appinfo.appImage = cell.appUIImage.image;
         
     }

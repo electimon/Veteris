@@ -71,8 +71,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqual:@"CategorySelectedPush"]) {
         
-        NSLog(@"Veteris: Pushing CategorySelectedView");
-        
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         FeaturedTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];

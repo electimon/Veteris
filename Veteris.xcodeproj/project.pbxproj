@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1D365422AE03B8000F7CC4 /* SearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D365322AE03B8000F7CC4 /* SearchTableViewCell.m */; };
+		2B1D366122B5C3D0000F7CC4 /* CrackDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D365722B5C3D0000F7CC4 /* CrackDataTableViewController.m */; };
+		2B1D366222B5C3D0000F7CC4 /* CrackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D365A22B5C3D0000F7CC4 /* CrackTableViewCell.m */; };
+		2B1D366322B5C3D0000F7CC4 /* CrackTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D365D22B5C3D0000F7CC4 /* CrackTableViewController.m */; };
+		2B1D366422B5C3D0000F7CC4 /* CrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D366022B5C3D0000F7CC4 /* CrackViewController.m */; };
+		2B1D366A22B5C428000F7CC4 /* SVProgressHUDUpdated.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D366722B5C428000F7CC4 /* SVProgressHUDUpdated.bundle */; };
+		2B1D366B22B5C428000F7CC4 /* SVProgressHUDUpdated.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D366922B5C428000F7CC4 /* SVProgressHUDUpdated.m */; };
 		2B1EC2DC22AB178400738022 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1EC2DB22AB178400738022 /* UIKit.framework */; };
 		2B1EC2DE22AB178400738022 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1EC2DD22AB178400738022 /* Foundation.framework */; };
 		2B1EC2E022AB178400738022 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1EC2DF22AB178400738022 /* CoreGraphics.framework */; };
@@ -14,6 +21,7 @@
 		2B1EC2E822AB178400738022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EC2E722AB178400738022 /* main.m */; };
 		2B1EC2EC22AB178500738022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EC2EB22AB178500738022 /* AppDelegate.m */; };
 		2B1EC2F522AB178500738022 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1EC2F322AB178500738022 /* MainStoryboard.storyboard */; };
+		2B6BA5BB22C2E53B002DBA1D /* CrackTabIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B6BA5BA22C2E53B002DBA1D /* CrackTabIcon@2x.png */; };
 		2BC46C0522AB1A2A00B8873F /* FeaturedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C0422AB1A2A00B8873F /* FeaturedTableViewController.m */; };
 		2BC46C1222AB213C00B8873F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC46C0F22AB213C00B8873F /* Default-568h@2x.png */; };
 		2BC46C1322AB213C00B8873F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC46C1022AB213C00B8873F /* Default.png */; };
@@ -26,7 +34,6 @@
 		2BC46C2022AB233B00B8873F /* Icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC46C1E22AB233B00B8873F /* Icon_120.png */; };
 		2BC46C2322AB252900B8873F /* FeaturedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C2222AB252900B8873F /* FeaturedTableViewCell.m */; };
 		2BC46C2A22AB255700B8873F /* CategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C2622AB255700B8873F /* CategoriesTableViewController.m */; };
-		2BC46C2B22AB255700B8873F /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C2922AB255700B8873F /* SearchTableViewController.m */; };
 		2BC46C3322AB274600B8873F /* categories.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC46C2E22AB274600B8873F /* categories.png */; };
 		2BC46C3422AB274600B8873F /* featured.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC46C2F22AB274600B8873F /* featured.png */; };
 		2BC46C3522AB274600B8873F /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC46C3022AB274600B8873F /* more.png */; };
@@ -40,9 +47,24 @@
 		2BC46C4F22ACBF6D00B8873F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC46C4E22ACBF6D00B8873F /* QuartzCore.framework */; };
 		2BC46C5222ACCD5200B8873F /* CategoriesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C5122ACCD5200B8873F /* CategoriesTableViewCell.m */; };
 		2BC46C5622ACD08D00B8873F /* CategorySelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C5522ACD08D00B8873F /* CategorySelectedViewController.m */; };
+		2BC46C6922AD8D4B00B8873F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C6822AD8D4B00B8873F /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1D365222AE03B8000F7CC4 /* SearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewCell.h; sourceTree = "<group>"; };
+		2B1D365322AE03B8000F7CC4 /* SearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewCell.m; sourceTree = "<group>"; };
+		2B1D365622B5C3D0000F7CC4 /* CrackDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrackDataTableViewController.h; sourceTree = "<group>"; };
+		2B1D365722B5C3D0000F7CC4 /* CrackDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrackDataTableViewController.m; sourceTree = "<group>"; };
+		2B1D365922B5C3D0000F7CC4 /* CrackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrackTableViewCell.h; sourceTree = "<group>"; };
+		2B1D365A22B5C3D0000F7CC4 /* CrackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrackTableViewCell.m; sourceTree = "<group>"; };
+		2B1D365C22B5C3D0000F7CC4 /* CrackTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrackTableViewController.h; sourceTree = "<group>"; };
+		2B1D365D22B5C3D0000F7CC4 /* CrackTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrackTableViewController.m; sourceTree = "<group>"; };
+		2B1D365F22B5C3D0000F7CC4 /* CrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrackViewController.h; sourceTree = "<group>"; };
+		2B1D366022B5C3D0000F7CC4 /* CrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrackViewController.m; sourceTree = "<group>"; };
+		2B1D366522B5C3FB000F7CC4 /* NSTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
+		2B1D366722B5C428000F7CC4 /* SVProgressHUDUpdated.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUDUpdated.bundle; sourceTree = "<group>"; };
+		2B1D366822B5C428000F7CC4 /* SVProgressHUDUpdated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDUpdated.h; sourceTree = "<group>"; };
+		2B1D366922B5C428000F7CC4 /* SVProgressHUDUpdated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDUpdated.m; sourceTree = "<group>"; };
 		2B1EC2D822AB178400738022 /* Veteris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Veteris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1EC2DB22AB178400738022 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2B1EC2DD22AB178400738022 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,6 +76,7 @@
 		2B1EC2EA22AB178500738022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B1EC2EB22AB178500738022 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2B1EC2F422AB178500738022 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2B6BA5BA22C2E53B002DBA1D /* CrackTabIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CrackTabIcon@2x.png"; sourceTree = "<group>"; };
 		2BC46C0322AB1A2A00B8873F /* FeaturedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedTableViewController.h; sourceTree = "<group>"; };
 		2BC46C0422AB1A2A00B8873F /* FeaturedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedTableViewController.m; sourceTree = "<group>"; };
 		2BC46C0F22AB213C00B8873F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -69,8 +92,6 @@
 		2BC46C2222AB252900B8873F /* FeaturedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedTableViewCell.m; sourceTree = "<group>"; };
 		2BC46C2522AB255700B8873F /* CategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesTableViewController.h; sourceTree = "<group>"; };
 		2BC46C2622AB255700B8873F /* CategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesTableViewController.m; sourceTree = "<group>"; };
-		2BC46C2822AB255700B8873F /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
-		2BC46C2922AB255700B8873F /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 		2BC46C2E22AB274600B8873F /* categories.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categories.png; sourceTree = "<group>"; };
 		2BC46C2F22AB274600B8873F /* featured.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = featured.png; sourceTree = "<group>"; };
 		2BC46C3022AB274600B8873F /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
@@ -89,6 +110,8 @@
 		2BC46C5122ACCD5200B8873F /* CategoriesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesTableViewCell.m; sourceTree = "<group>"; };
 		2BC46C5422ACD08D00B8873F /* CategorySelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategorySelectedViewController.h; sourceTree = "<group>"; };
 		2BC46C5522ACD08D00B8873F /* CategorySelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategorySelectedViewController.m; sourceTree = "<group>"; };
+		2BC46C6722AD8D4B00B8873F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		2BC46C6822AD8D4B00B8873F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +129,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1D365522B5C3D0000F7CC4 /* CrackDataTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B1D365622B5C3D0000F7CC4 /* CrackDataTableViewController.h */,
+				2B1D365722B5C3D0000F7CC4 /* CrackDataTableViewController.m */,
+			);
+			path = CrackDataTableViewController;
+			sourceTree = "<group>";
+		};
+		2B1D365822B5C3D0000F7CC4 /* CrackTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B1D365922B5C3D0000F7CC4 /* CrackTableViewCell.h */,
+				2B1D365A22B5C3D0000F7CC4 /* CrackTableViewCell.m */,
+			);
+			path = CrackTableViewCell;
+			sourceTree = "<group>";
+		};
+		2B1D365B22B5C3D0000F7CC4 /* CrackTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B1D365C22B5C3D0000F7CC4 /* CrackTableViewController.h */,
+				2B1D365D22B5C3D0000F7CC4 /* CrackTableViewController.m */,
+			);
+			path = CrackTableViewController;
+			sourceTree = "<group>";
+		};
+		2B1D365E22B5C3D0000F7CC4 /* CrackViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B1D365F22B5C3D0000F7CC4 /* CrackViewController.h */,
+				2B1D366022B5C3D0000F7CC4 /* CrackViewController.m */,
+			);
+			path = CrackViewController;
+			sourceTree = "<group>";
+		};
+		2B1D366622B5C428000F7CC4 /* SVProgessHUDUpdated */ = {
+			isa = PBXGroup;
+			children = (
+				2B1D366722B5C428000F7CC4 /* SVProgressHUDUpdated.bundle */,
+				2B1D366822B5C428000F7CC4 /* SVProgressHUDUpdated.h */,
+				2B1D366922B5C428000F7CC4 /* SVProgressHUDUpdated.m */,
+			);
+			path = SVProgessHUDUpdated;
+			sourceTree = "<group>";
+		};
 		2B1EC2CF22AB178400738022 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +208,7 @@
 		2B1EC2E122AB178400738022 /* Veteris */ = {
 			isa = PBXGroup;
 			children = (
+				2B1D366622B5C428000F7CC4 /* SVProgessHUDUpdated */,
 				2B1EC2EA22AB178500738022 /* AppDelegate.h */,
 				2B1EC2EB22AB178500738022 /* AppDelegate.m */,
 				2B1EC2F322AB178500738022 /* MainStoryboard.storyboard */,
@@ -162,10 +232,15 @@
 		2BC46BFD22AB19D000B8873F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2B1D366522B5C3FB000F7CC4 /* NSTask.h */,
+				2B1D365522B5C3D0000F7CC4 /* CrackDataTableViewController */,
+				2B1D365822B5C3D0000F7CC4 /* CrackTableViewCell */,
+				2B1D365B22B5C3D0000F7CC4 /* CrackTableViewController */,
+				2B1D365E22B5C3D0000F7CC4 /* CrackViewController */,
+				2BC46C6622AD8D4100B8873F /* SearchViewController */,
 				2BC46C5322ACD07600B8873F /* CategorySelectedViewController */,
 				2BC46C0222AB1A2A00B8873F /* FeaturedTableViewController */,
 				2BC46C2422AB255700B8873F /* CategoriesTableViewController */,
-				2BC46C2722AB255700B8873F /* SearchTableViewController */,
 				2BC46C4022AC925400B8873F /* AppInfo */,
 				2BC46C3D22AB286300B8873F /* VAPIHelper.h */,
 				2BC46C3E22AB286300B8873F /* VAPIHelper.m */,
@@ -187,6 +262,7 @@
 		2BC46C0E22AB213C00B8873F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2B6BA5BA22C2E53B002DBA1D /* CrackTabIcon@2x.png */,
 				2BC46C3822AB276400B8873F /* arrow.png */,
 				2BC46C0F22AB213C00B8873F /* Default-568h@2x.png */,
 				2BC46C1022AB213C00B8873F /* Default.png */,
@@ -218,15 +294,6 @@
 			path = CategoriesTableViewController;
 			sourceTree = "<group>";
 		};
-		2BC46C2722AB255700B8873F /* SearchTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2BC46C2822AB255700B8873F /* SearchTableViewController.h */,
-				2BC46C2922AB255700B8873F /* SearchTableViewController.m */,
-			);
-			path = SearchTableViewController;
-			sourceTree = "<group>";
-		};
 		2BC46C4022AC925400B8873F /* AppInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +323,17 @@
 			path = CategorySelectedViewController;
 			sourceTree = "<group>";
 		};
+		2BC46C6622AD8D4100B8873F /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2BC46C6722AD8D4B00B8873F /* SearchViewController.h */,
+				2BC46C6822AD8D4B00B8873F /* SearchViewController.m */,
+				2B1D365222AE03B8000F7CC4 /* SearchTableViewCell.h */,
+				2B1D365322AE03B8000F7CC4 /* SearchTableViewCell.m */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,7 +344,6 @@
 				2B1EC2D422AB178400738022 /* Sources */,
 				2B1EC2D522AB178400738022 /* Frameworks */,
 				2B1EC2D622AB178400738022 /* Resources */,
-				2B1EC30922AB17B500738022 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -318,11 +395,13 @@
 				2BC46C1F22AB233B00B8873F /* Icon_80.png in Resources */,
 				2BC46C1822AB21D900B8873F /* Icon@2x.png in Resources */,
 				2BC46C3422AB274600B8873F /* featured.png in Resources */,
+				2B1D366A22B5C428000F7CC4 /* SVProgressHUDUpdated.bundle in Resources */,
 				2B1EC2F522AB178500738022 /* MainStoryboard.storyboard in Resources */,
 				2BC46C3922AB276400B8873F /* arrow.png in Resources */,
 				2BC46C2022AB233B00B8873F /* Icon_120.png in Resources */,
 				2BC46C3622AB274600B8873F /* search.png in Resources */,
 				2BC46C1422AB213C00B8873F /* Default@2x.png in Resources */,
+				2B6BA5BB22C2E53B002DBA1D /* CrackTabIcon@2x.png in Resources */,
 				2BC46C1222AB213C00B8873F /* Default-568h@2x.png in Resources */,
 				2BC46C3522AB274600B8873F /* more.png in Resources */,
 				2BC46C1322AB213C00B8873F /* Default.png in Resources */,
@@ -331,22 +410,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2B1EC30922AB17B500738022 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Library/JailCoder/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		2B1EC2D422AB178400738022 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -354,14 +417,20 @@
 			files = (
 				2BC46C0522AB1A2A00B8873F /* FeaturedTableViewController.m in Sources */,
 				2BC46C4322AC927C00B8873F /* AppInfo.m in Sources */,
+				2B1D366322B5C3D0000F7CC4 /* CrackTableViewController.m in Sources */,
+				2B1D366422B5C3D0000F7CC4 /* CrackViewController.m in Sources */,
 				2BC46C2322AB252900B8873F /* FeaturedTableViewCell.m in Sources */,
+				2B1D366B22B5C428000F7CC4 /* SVProgressHUDUpdated.m in Sources */,
 				2BC46C5222ACCD5200B8873F /* CategoriesTableViewCell.m in Sources */,
 				2BC46C3F22AB286300B8873F /* VAPIHelper.m in Sources */,
+				2B1D365422AE03B8000F7CC4 /* SearchTableViewCell.m in Sources */,
 				2BC46C5622ACD08D00B8873F /* CategorySelectedViewController.m in Sources */,
 				2B1EC2E822AB178400738022 /* main.m in Sources */,
 				2BC46C4D22ACBBEA00B8873F /* SVProgressHUD.m in Sources */,
-				2BC46C2B22AB255700B8873F /* SearchTableViewController.m in Sources */,
+				2BC46C6922AD8D4B00B8873F /* SearchViewController.m in Sources */,
+				2B1D366222B5C3D0000F7CC4 /* CrackTableViewCell.m in Sources */,
 				2BC46C2A22AB255700B8873F /* CategoriesTableViewController.m in Sources */,
+				2B1D366122B5C3D0000F7CC4 /* CrackDataTableViewController.m in Sources */,
 				2B1EC2EC22AB178500738022 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,7 +469,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -431,7 +501,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -447,8 +518,8 @@
 		2B1EC30722AB178500738022 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Veteris/Veteris-Prefix.pch";
 				INFOPLIST_FILE = "Veteris/Veteris-Info.plist";
@@ -461,8 +532,8 @@
 		2B1EC30822AB178500738022 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Veteris/Veteris-Prefix.pch";
 				INFOPLIST_FILE = "Veteris/Veteris-Info.plist";

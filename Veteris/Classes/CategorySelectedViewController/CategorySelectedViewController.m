@@ -110,7 +110,6 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqual:@"CategorySelectedAppInfoPush"]) {
-        NSLog(@"Veteris: Pushing AppInfo");
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
