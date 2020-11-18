@@ -21,6 +21,7 @@
 		2B1EC2E822AB178400738022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EC2E722AB178400738022 /* main.m */; };
 		2B1EC2EC22AB178500738022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EC2EB22AB178500738022 /* AppDelegate.m */; };
 		2B1EC2F522AB178500738022 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1EC2F322AB178500738022 /* MainStoryboard.storyboard */; };
+		2B22E91D24772A410050F0B5 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B22E91C24772A400050F0B5 /* SettingsTableViewController.m */; };
 		2B6BA5BB22C2E53B002DBA1D /* CrackTabIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B6BA5BA22C2E53B002DBA1D /* CrackTabIcon@2x.png */; };
 		2BC46C0522AB1A2A00B8873F /* FeaturedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC46C0422AB1A2A00B8873F /* FeaturedTableViewController.m */; };
 		2BC46C1222AB213C00B8873F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC46C0F22AB213C00B8873F /* Default-568h@2x.png */; };
@@ -76,6 +77,8 @@
 		2B1EC2EA22AB178500738022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B1EC2EB22AB178500738022 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2B1EC2F422AB178500738022 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2B22E91B24772A400050F0B5 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		2B22E91C24772A400050F0B5 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		2B6BA5BA22C2E53B002DBA1D /* CrackTabIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CrackTabIcon@2x.png"; sourceTree = "<group>"; };
 		2BC46C0322AB1A2A00B8873F /* FeaturedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedTableViewController.h; sourceTree = "<group>"; };
 		2BC46C0422AB1A2A00B8873F /* FeaturedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedTableViewController.m; sourceTree = "<group>"; };
@@ -229,10 +232,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2B22E91A247729DE0050F0B5 /* SettingsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B22E91B24772A400050F0B5 /* SettingsTableViewController.h */,
+				2B22E91C24772A400050F0B5 /* SettingsTableViewController.m */,
+			);
+			path = SettingsTableViewController;
+			sourceTree = "<group>";
+		};
 		2BC46BFD22AB19D000B8873F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				2B1D366522B5C3FB000F7CC4 /* NSTask.h */,
+				2B22E91A247729DE0050F0B5 /* SettingsTableViewController */,
 				2B1D365522B5C3D0000F7CC4 /* CrackDataTableViewController */,
 				2B1D365822B5C3D0000F7CC4 /* CrackTableViewCell */,
 				2B1D365B22B5C3D0000F7CC4 /* CrackTableViewController */,
@@ -427,6 +440,7 @@
 				2BC46C5622ACD08D00B8873F /* CategorySelectedViewController.m in Sources */,
 				2B1EC2E822AB178400738022 /* main.m in Sources */,
 				2BC46C4D22ACBBEA00B8873F /* SVProgressHUD.m in Sources */,
+				2B22E91D24772A410050F0B5 /* SettingsTableViewController.m in Sources */,
 				2BC46C6922AD8D4B00B8873F /* SearchViewController.m in Sources */,
 				2B1D366222B5C3D0000F7CC4 /* CrackTableViewCell.m in Sources */,
 				2BC46C2A22AB255700B8873F /* CategoriesTableViewController.m in Sources */,
@@ -518,13 +532,13 @@
 		2B1EC30722AB178500738022 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Veteris/Veteris-Prefix.pch";
 				INFOPLIST_FILE = "Veteris/Veteris-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos5.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -532,13 +546,13 @@
 		2B1EC30822AB178500738022 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sam Guichelaar (YT9MX5VH47)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Veteris/Veteris-Prefix.pch";
 				INFOPLIST_FILE = "Veteris/Veteris-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos5.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

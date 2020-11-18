@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) NSString *VAPIDeviceString;
+@property (strong, nonatomic) NSString *sessionToken;
 @property BOOL installingBool;
 
 @end

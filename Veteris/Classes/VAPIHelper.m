@@ -16,7 +16,7 @@
 
 @implementation VAPIHelper
 
-+ (NSDictionary *)apiGet:(NSString *)endpoint {
++ (NSDictionary *)apiGet:(NSString *)endpoint  {
     
     AppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
     

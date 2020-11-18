@@ -43,6 +43,8 @@
         }
     }
     
+    self.navigationItem.title = @"Categories";
+    
 }
 - (void)didReceiveMemoryWarning
 {

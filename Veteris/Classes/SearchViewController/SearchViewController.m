@@ -98,8 +98,6 @@ shouldReloadTableForSearchString:(NSString *)searchString
             
             apiResponse = [VAPIHelper apiGet:[[NSString stringWithFormat:@"suggest?query=%@", searchText] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
             
-            
-            
             if (apiResponse == nil) {
                 apiResponse = [VAPIHelper apiGet:[NSString stringWithFormat:@"suggest?query=%@", searchText]];
                 if (apiResponse == nil) {

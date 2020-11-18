@@ -12,6 +12,7 @@
 @implementation AppDelegate
 @synthesize VAPIDeviceString;
 @synthesize installingBool;
+@synthesize sessionToken;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
