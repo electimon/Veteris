@@ -1,0 +1,11 @@
+clang
+--target=arm-apple-darwin9
+-miphoneos-version-min=5.0
+-I/home/electimon/Projects/toolchain/saucy/root/theos/sdks/iPhoneOS6.0.sdk/usr/include
+-I/home/electimon/Projects/toolchain/saucy/root/Projects/Veteris-priv/Veteris
+-fobjc-nonfragile-abi
+-fblocks
+-fobjc-arc
+-include/home/electimon/Projects/toolchain/saucy/root/Projects/Veteris-priv/Veteris/Veteris-Prefix.pch
+%objective-c
+%h 

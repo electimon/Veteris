@@ -1,0 +1,11 @@
+*.storyboardc
+.ccls-cache
+rootinst/
+root_inst/
+xcbuild/
+build/
+*.o
+,DS_Store
+*.tmp
+*_*
+.iphonesdk
