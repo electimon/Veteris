@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message VersionMsg {
+    required string version = 1;
+    required string fileName = 2;
+    required string minVersion = 3;
+}
+
+message AppMsg {
+    required string name = 1;
+    required string developer = 2;
+    required string bundleid = 3;
+    required string description = 4;
+    repeated VersionMsg versions = 5;
+    required string iconurl = 6;
+}

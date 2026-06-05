@@ -1,0 +1,15 @@
+import glob
+from SCons.Script import Environment
+
+env: Environment = Environment()
+
+Import("env")
+env.Prepend(CFLAGS=["-Inanopb"])
+env = env.Clone()
+
+srcs = (
+    glob.glob("./*.c", recursive=True)
+)
+
+nanopb = env.StaticLibrary(target="nanopb", source=srcs)
+Return('nanopb')

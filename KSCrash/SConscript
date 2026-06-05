@@ -1,0 +1,20 @@
+import glob
+from SCons.Script import Environment
+
+env: Environment = Environment()
+
+Import("env")
+env.Prepend(LINKFLAGS=["-lc++", "-lc++abi"])
+env = env.Clone()
+
+srcs = (
+    glob.glob("Source/KSCrash/**/**.m", recursive=True)
+    + glob.glob("Source/KSCrash/**/**.mm", recursive=True)
+    + glob.glob("Source/KSCrash/**/**.c", recursive=True)
+    + glob.glob("Source/KSCrash/**/**.cpp", recursive=True)
+)
+
+env.disable_arc(srcs, "KSZombie.m")
+
+kscrash = env.StaticLibrary(target="kscrash", source=srcs)
+Return("kscrash")

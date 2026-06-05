@@ -1,0 +1,24 @@
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.private.mobileinstall.allowedSPI</key>
+	<array>
+		<string>Install</string>
+                <string>InstallForLaunchServices</string>
+	</array>
+        <key>com.apple.springboard.debugapplications</key>
+        <true/>
+        <key>keychain-access-groups</key>
+        <array>
+                <string>$(AppIdentifierPrefix)com.1pwn.ixmoe.Veteris</string>
+        </array>
+        <key>task_for_pid-allow</key>
+        <true/>
+        <key>get_task_allow</key>
+        <true/>
+        <key>run-unsigned-code</key>
+        <true/>
+        <key>application-identifier</key>
+        <string>com.1pwn.ixmoe.Veteris</string>
+</dict>
+</plist>

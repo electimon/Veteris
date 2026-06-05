@@ -1,0 +1,19 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+message NewsEntry {
+    string author = 1;
+    string title = 2;
+    string body = 3;
+    string date = 4;
+    string link = 5;
+}
+
+message NewsMsg {
+    repeated NewsEntry news = 1;
+}
+
+message Changelog {
+    string version = 1;
+    string body = 2;
+}

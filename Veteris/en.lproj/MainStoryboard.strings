@@ -1,0 +1,68 @@
+/* Class = "IBUINavigationItem"; title = "Info"; ObjectID = "2dM-sM-VuX"; */
+"2dM-sM-VuX.title" = "Info";
+
+/* Class = "IBUINavigationItem"; title = "Settings"; ObjectID = "B4M-KW-dDQ"; */
+"B4M-KW-dDQ.title" = "Settings";
+
+/* Class = "IBUITabBarItem"; title = "Crack"; ObjectID = "BeX-CK-2Dg"; */
+"BeX-CK-2Dg.title" = "Crack";
+
+/* Class = "IBUITabBarItem"; title = "Crack"; ObjectID = "Bqz-T9-GwP"; */
+"Bqz-T9-GwP.title" = "Crack";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Dfu-tO-Wym"; */
+"Dfu-tO-Wym.text" = "Label";
+
+/* Class = "IBUIBarButtonItem"; title = "Crack"; ObjectID = "EDo-aG-jJk"; */
+"EDo-aG-jJk.title" = "Crack";
+
+/* Class = "IBUITabBarItem"; title = "All Apps"; ObjectID = "EeG-KJ-fGX"; */
+"EeG-KJ-fGX.title" = "All Apps";
+
+/* Class = "IBUILabel"; text = "0 ratings"; ObjectID = "GVg-Kv-R9i"; */
+"GVg-Kv-R9i.text" = "0 ratings";
+
+/* Class = "IBUISegmentedControl"; J2N-Td-IDM.segmentTitles[0] = "Apps"; ObjectID = "J2N-Td-IDM"; */
+"J2N-Td-IDM.segmentTitles[0]" = "Apps";
+
+/* Class = "IBUISegmentedControl"; J2N-Td-IDM.segmentTitles[1] = "Queue"; ObjectID = "J2N-Td-IDM"; */
+"J2N-Td-IDM.segmentTitles[1]" = "Queue";
+
+/* Class = "IBUILabel"; text = "Welcome to Veteris!"; ObjectID = "MOD-TI-LhA"; */
+"MOD-TI-LhA.text" = "Welcome to Veteris!";
+
+/* Class = "IBUINavigationItem"; title = "Category"; ObjectID = "OBp-pO-WaV"; */
+"OBp-pO-WaV.title" = "Category";
+
+/* Class = "IBUINavigationItem"; title = "Home"; ObjectID = "PUp-ct-BFm"; */
+"PUp-ct-BFm.title" = "Home";
+
+/* Class = "IBUILabel"; text = "GET"; ObjectID = "QRx-qm-2X1"; */
+"QRx-qm-2X1.text" = "GET";
+
+/* Class = "IBUILabel"; text = "Description"; ObjectID = "R5m-zQ-53J"; */
+"R5m-zQ-53J.text" = "Description";
+
+/* Class = "IBUINavigationController"; title = "Home"; ObjectID = "TNt-vo-MLy"; */
+"TNt-vo-MLy.title" = "Home";
+
+/* Class = "IBUITabBarItem"; title = "Settings"; ObjectID = "YMe-cW-Y1z"; */
+"YMe-cW-Y1z.title" = "Settings";
+
+/* Class = "IBUILabel"; text = "GET"; ObjectID = "bI5-hE-NmS"; */
+"bI5-hE-NmS.text" = "GET";
+
+/* Class = "IBUITabBarItem"; title = "Categories"; ObjectID = "dA1-3V-V74"; */
+"dA1-3V-V74.title" = "Categories";
+
+/* Class = "IBUILabel"; text = "GET"; ObjectID = "lRZ-Ix-STI"; */
+"lRZ-Ix-STI.text" = "GET";
+
+/* Class = "IBUINavigationItem"; title = "All Apps"; ObjectID = "lqw-LO-v8X"; */
+"lqw-LO-v8X.title" = "All Apps";
+
+/* Class = "IBUITabBarItem"; title = "Home"; ObjectID = "pga-8S-d13"; */
+"pga-8S-d13.title" = "Home";
+
+/* Class = "IBUINavigationItem"; title = "Featured"; ObjectID = "vaw-Nk-KHO"; */
+"vaw-Nk-KHO.title" = "Featured";

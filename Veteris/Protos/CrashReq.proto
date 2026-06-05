@@ -1,0 +1,10 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+message CrashReportEntry {
+    bytes data = 1;
+}
+
+message CrashReportMsg {
+    repeated CrashReportEntry entries = 1;
+}

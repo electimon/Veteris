@@ -1,0 +1,88 @@
+import glob
+from SCons.Script import Environment
+
+env: Environment = Environment()
+
+Import("env")
+env = env.Clone()
+
+srcs = (
+    glob.glob("./**/**.m", recursive=True)
+    + glob.glob("./**/**.mm", recursive=True)
+    + glob.glob("./**/**.c", recursive=True)
+    + glob.glob("./**/**.cpp", recursive=True)
+)
+
+# Main Prog
+srcs_to_remove_idx: list[Unknown] = []
+for i in srcs:
+    if "libobjcipc" in i or (
+        ("YZLog" in i or "DebugTextView" in i) and env.get("debug", 0) == 0
+    ):
+        srcs_to_remove_idx.append(srcs.index(i))
+srcs = [srcs[i] for i in range(len(srcs)) if i not in srcs_to_remove_idx]
+
+veteris_prog = env.Program("xcbuild/Veteris_", srcs)
+env.Append(LINKFLAGS=[
+        "-framework", "AppSupport",
+        "-framework", "QuartzCore",
+        "-framework", "CoreImage",
+        "-framework", "Security",
+        "-framework", "Foundation",
+        "-framework", "UIKit",
+        "-framework", "MobileInstallation",
+        "-framework", "CoreGraphics",
+        "-framework", "MobileCoreServices",
+        "-framework", "MessageUI",
+        "-framework", "SystemConfiguration",
+        "libs/libz.a",
+        "libs/libssl.a",
+        "libs/libcurl.a",
+        "libs/libcrypto.a",
+        "-Wl,-U,_MobileInstallationLookup",
+        "-Wl,-U,_MobileInstallationInstall",
+    ],
+    CFLAGS=[
+        "-include", "Veteris/Veteris-Prefix.pch",
+        "-I./Veteris/md5",
+        "-I./Veteris",
+        "-I./Veteris/ActionSheetPicker",
+        "-I./Veteris/InAppSettingsKit/Models",
+        "-I./Veteris/InAppSettingsKit/Controllers",
+        "-I./Veteris/InAppSettingsKit/Views",
+        "-I./Veteris/Classes",
+        "-I./Veteris/Classes/Convenience",
+        "-I./Veteris/Classes/../Clutch",
+        "-I./Veteris/Classes/../Clutch/minizip",
+        "-I./Veteris/Classes/AppInfo",
+        "-I./Veteris/Classes/AppsTableViewController",
+        "-I./Veteris/Classes/CategoriesTableViewController",
+        "-I./Veteris/Classes/CategorySelectedViewController",
+        "-I./Veteris/Classes/CrackTableViewCell",
+        "-I./Veteris/Classes/CrackTableViewController",
+        "-I./Veteris/Classes/CrackViewController",
+        "-I./Veteris/Classes/FeaturedTableViewController",
+        "-I./Veteris/Classes/SearchViewController",
+        "-I./Veteris/Classes/SettingsTableViewController",
+        "-I./Veteris/SVProgressHUD",
+        "-I./KSCrash/Source/KSCrash/Reporting/Filters",
+        "-I./KSCrash/Source/KSCrash/Reporting/Tools",
+        "-I./KSCrash/Source/KSCrash/Recording",
+        "-I./KSCrash/Source/KSCrash/Recording/Tools",
+        "-I./KSCrash/Source/KSCrash/Recording/Filters/Tools",
+        "-I./KSCrash/Source/KSCrash/Reporting/Filters/Tools",
+        "-I./KSCrash/Source/KSCrash/Reporting/Sinks",
+        "-I./KSCrash/Source/KSCrash/Recording/Sentry",
+        "-I./KSCrash/Source/KSCrash/Installations",
+        "-I.",
+        "-I./Veteris/BBHTTP",
+        "-I./Veteris/BBHTTP/Handlers",
+        "-I./Veteris/BBHTTP/Internal",
+        "-I./Veteris/Classes/HomeTableViewCell",
+        "-I./SdkAdditions",
+        "-I./libobjcipc",
+        "-DHAVE_CERT",
+        "-DVAPI",
+    ]
+)
+Return("veteris_prog")
